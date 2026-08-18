@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import oneConnection from "@/assets/images/one-connection.jpg";
 import { ArrowUpRight } from "./icons";
-import { site } from "@/lib/site";
 
 export function HomeHero() {
   return (
@@ -33,10 +32,7 @@ export function HomeHero() {
           <br />
           Every Kenyan network.
         </h1>
-        <p className="mx-auto mb-10 mt-8 max-w-2xl text-lg font-light text-white/90 md:text-xl">
-          {site.description}
-        </p>
-        <Link href="/contact" className="group mx-auto flex w-max items-center">
+        <Link href="/contact" className="group mx-auto mt-10 flex w-max items-center">
           <span className="rounded-full bg-brand px-6 py-3 text-sm text-white duration-500 ease-in-out group-hover:bg-white group-hover:text-brand">
             Talk to our team
           </span>
