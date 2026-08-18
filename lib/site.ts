@@ -5,7 +5,7 @@ export const site = {
   tagline: "One connection. Every Kenyan network.",
   description:
     "Bulk SMS, USSD, WhatsApp and CAK-registered shortcodes & sender IDs — on a single account, with a person on the other end of the phone when you need one.",
-  email: "hello@siscom.co.ke",
+  email: "tech@siscom.tech",
   phoneDisplay: "",
   phoneTel: "",
   whatsapp: "",
