@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
-import { WhatsAppButton } from "@/components/whatsapp-button";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -35,12 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" id="top" className={`${inter.variable} ${manrope.variable}`}>
-      <body className="overflow-x-hidden bg-cream font-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
-      </body>
+      <body className="overflow-x-hidden bg-cream font-sans antialiased">{children}</body>
     </html>
   );
 }
