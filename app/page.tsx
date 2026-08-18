@@ -128,7 +128,7 @@ export default function HomePage() {
                 href="/services/shortcodes"
                 className="group flex flex-col overflow-hidden border border-edge bg-card md:flex-row"
               >
-                <div className="flex w-full flex-col justify-between p-8 md:w-[45%] md:p-12">
+                <div className="flex w-full flex-col justify-between p-8 md:w-[38%] md:p-12 lg:p-16">
                   <div>
                     <h3 className="font-display mb-4 text-[2rem] font-medium tracking-tight text-white">{item.title}</h3>
                     <p className="mb-8 text-base leading-relaxed text-soft">{item.body}</p>
