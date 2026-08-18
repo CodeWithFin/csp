@@ -34,7 +34,6 @@ export default function UssdPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
         title="USSD that works on every handset"
         body="Menu-driven, internet-free experiences for sign-ups, payments and support. Pair a code with STK Push when the customer needs to pay, or with SMS when they need a receipt."
       />

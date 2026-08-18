@@ -38,7 +38,6 @@ export default function BulkSmsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
         title="Bulk SMS across every Kenyan network"
         body="Send at scale across Safaricom, Airtel and Telkom with live delivery reports and smart routing, then fold the same traffic into shortcodes, USSD and WhatsApp when you need a reply."
       />

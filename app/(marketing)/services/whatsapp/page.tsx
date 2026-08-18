@@ -34,7 +34,6 @@ export default function WhatsAppPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
         title="WhatsApp for alerts that need a reply"
         body="Turn one-way notifications into two-way conversations. Templates and media for the outbound; a human or a webhook for whatever comes back."
       />

@@ -34,7 +34,6 @@ export default function MpesaPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
         title="M-Pesa inside the same journey"
         body="STK Push, B2C and reconciliation wired directly into your messaging and USSD flows. One account, one webhook, one team in Nairobi."
       />

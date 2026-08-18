@@ -10,7 +10,6 @@ export default function TermsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Legal"
         title="Terms of Use"
         body="These terms cover use of this website. Service contracts for SMS, USSD, WhatsApp, shortcodes and M-Pesa are agreed separately."
       />
