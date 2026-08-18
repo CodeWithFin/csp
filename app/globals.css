@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0c1100;
+  --color-muted: #4d4d4d;
+  --color-body: #333333;
+  --color-line: #cccccc;
+  --color-cream: #fdfcfc;
+  --color-wash: #eeeeee;
+  --color-night: #040600;
+  --color-card: #262626;
+  --color-edge: #2d2c2c;
+  --color-dim: #4d4d4d;
+  --color-soft: #e7e3e0;
+  --color-live: #12866f;
+  --color-brand: #b4004e;
+  --color-brand-hover: #930040;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-muted);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #0c1100;
+  color: #fff;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.85);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-label {
+  animation: marquee 6s linear infinite;
+}
+
+.animate-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.field-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%230c1100' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.15rem center;
+  background-size: 16px 16px;
+  padding-right: 2.75rem;
+}
