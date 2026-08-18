@@ -27,7 +27,6 @@ export default function ShortcodesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Deep dive"
         title="Shortcodes & sender IDs for Kenyan businesses"
         body="Get a memorable number your customers can text, and a branded name they see on every message. Siscom sets up shared or dedicated shortcodes and takes the sender ID paperwork (the CAK-aligned registration with Safaricom, Airtel and Telkom) off your plate during onboarding, at no extra charge."
       />
