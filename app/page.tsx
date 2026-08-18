@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import nairobi from "@/assets/images/nairobi.jpg";
 import { ContactMarquee } from "@/components/contact-marquee";
 import { FaqList } from "@/components/faq-list";
 import { ProductMarquee } from "@/components/product-marquee";
@@ -160,13 +162,16 @@ export default function HomePage() {
           </p>
         </div>
         <div className="relative h-[50vw] overflow-hidden rounded-2xl bg-night md:h-[28rem]">
-          <div className="absolute inset-0 grid grid-cols-6 grid-rows-4 gap-px p-8 opacity-40">
-            {Array.from({ length: 24 }).map((_, i) => (
-              <div key={i} className="border border-white/10" />
-            ))}
-          </div>
+          <Image
+            src={nairobi}
+            alt="Nairobi, Kenya"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1280px) 82rem, 100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="relative flex h-full flex-col justify-end p-8 md:p-12">
-            <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi · Kenya</p>
+            <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi, Kenya</p>
             <p className="mt-3 max-w-md text-soft">CAK-aligned registration. ODPC-aware opt-in and STOP handling.</p>
           </div>
         </div>
