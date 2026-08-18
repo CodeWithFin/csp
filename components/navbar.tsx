@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <nav className="relative z-50 flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20">
       <Link href="/" className="relative flex items-center">
-        <Image src={logo} alt="Siscom" className="h-8 w-auto md:h-9" priority />
+        <Image src={logo} alt="Siscom" className="h-[2.2rem] w-auto md:h-[2.475rem]" priority />
       </Link>
 
       <div className="hidden items-center gap-8 text-sm font-normal text-body md:flex">
