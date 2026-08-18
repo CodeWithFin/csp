@@ -8,4 +8,12 @@ services:
       NODE_ENV: production
       PORT: 3000
       HOSTNAME: 0.0.0.0
+      DATA_DIR: /app/data
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change-me}
+      ADMIN_SECRET: ${ADMIN_SECRET:-}
+    volumes:
+      - inquiries-data:/app/data
     restart: unless-stopped
+
+volumes:
+  inquiries-data:

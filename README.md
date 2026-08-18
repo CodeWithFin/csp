@@ -11,6 +11,12 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+Contact form messages are saved for the admin dashboard at [http://localhost:3000/admin](http://localhost:3000/admin). Copy `.env.example` to `.env.local` and set `ADMIN_PASSWORD` before signing in.
+
+```bash
+cp .env.example .env.local
+```
+
 Contact details live in `lib/site.ts` (`email`, `phoneDisplay`, `phoneTel`, `whatsapp`). Fill those before go-live.
 
 ## Production (Docker)
@@ -18,10 +24,12 @@ Contact details live in `lib/site.ts` (`email`, `phoneDisplay`, `phoneTel`, `wha
 On the server:
 
 ```bash
-docker compose up -d --build
+ADMIN_PASSWORD=your-strong-password docker compose up -d --build
 ```
 
-The app listens on port **3000**. Put Nginx or Caddy in front of it:
+The app listens on port **3000**. Admin responses live at `/admin`. Inquiries are stored in the `inquiries-data` Docker volume.
+
+Put Nginx or Caddy in front of it:
 
 ```nginx
 server {

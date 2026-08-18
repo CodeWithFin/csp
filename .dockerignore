@@ -7,4 +7,9 @@ docker-compose.yml
 README.md
 *.md
 .env*.local
+data
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
 npm-debug.log*
