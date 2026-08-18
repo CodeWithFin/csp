@@ -13,7 +13,6 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Contact"
         title="Talk to a person in Nairobi"
         body="Tell us what you need to send, collect or collect payment for. We'll come back with a setup path and a quote, not a generic deck."
       />
