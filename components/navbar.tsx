@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import logo from "@/assets/images/siscom-logo.png";
-import { CloseIcon, MenuIcon } from "./icons";
-import { navLinks } from "@/lib/site";
+import { CloseIcon, MenuIcon, WhatsAppIcon } from "./icons";
+import { navLinks, site } from "@/lib/site";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -25,6 +25,15 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-3">
+        <a
+          href={site.whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-105 hover:bg-[#1ebe5d]"
+        >
+          <WhatsAppIcon className="h-5 w-5" />
+        </a>
         <Link
           href="/contact"
           className="hidden rounded-full border border-brand px-4 py-2 text-sm text-brand transition-colors hover:bg-brand hover:text-white md:inline-flex"

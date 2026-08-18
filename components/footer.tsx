@@ -56,11 +56,9 @@ export function Footer() {
                 <a href={`mailto:${site.email}`} className="transition-colors hover:text-white">
                   {site.email}
                 </a>
-                {site.phoneDisplay ? (
-                  <a href={`tel:${site.phoneTel}`} className="transition-colors hover:text-white">
-                    {site.phoneDisplay}
-                  </a>
-                ) : null}
+                <a href={site.whatsappUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">
+                  WhatsApp {site.phoneDisplay}
+                </a>
                 <span>{site.location}</span>
               </div>
             </div>

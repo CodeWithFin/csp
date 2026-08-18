@@ -11,9 +11,10 @@ export const site = {
   description:
     "Bulk SMS, USSD, WhatsApp and CAK-registered shortcodes & sender IDs on a single account, with a person on the other end of the phone when you need one.",
   email: "tech@siscom.tech",
-  phoneDisplay: "",
-  phoneTel: "",
-  whatsapp: "",
+  phoneDisplay: "+254 720 935482",
+  phoneTel: "+254720935482",
+  whatsapp: "254720935482",
+  whatsappUrl: "https://wa.me/254720935482",
   location: "Nairobi, Kenya",
   url: "https://siscom.co.ke",
 };
