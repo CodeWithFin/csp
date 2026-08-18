@@ -35,7 +35,7 @@ export function Navbar() {
       </Link>
 
       <div
-        className={`hidden items-center gap-8 text-sm font-normal md:flex ${
+        className={`hidden items-center gap-8 font-display text-sm font-medium md:flex ${
           overlay ? "text-white" : "text-body"
         }`}
       >
@@ -53,7 +53,7 @@ export function Navbar() {
       <div className="relative z-50 flex items-center gap-3">
         <Link
           href="/contact"
-          className={`hidden rounded-full border px-4 py-2 text-sm transition-colors md:inline-flex ${
+          className={`hidden rounded-full border px-4 py-2 font-display text-sm font-medium transition-colors md:inline-flex ${
             overlay
               ? "border-white text-white hover:bg-white hover:text-ink"
               : "border-brand text-brand hover:bg-brand hover:text-white"
@@ -65,7 +65,7 @@ export function Navbar() {
           href="/contact"
           className="hidden items-center gap-2 rounded-full bg-brand px-4 py-2 text-white transition-colors hover:bg-brand-hover md:inline-flex"
         >
-          <span className="text-sm font-normal">Get Started</span>
+          <span className="font-display text-sm font-medium">Get Started</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
             <path d="M7 17L17 7M17 7H9M17 7v8" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -108,7 +108,7 @@ export function Navbar() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm text-white"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 font-display text-sm font-medium text-white"
             >
               Get Started
               <ArrowUpRight />
