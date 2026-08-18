@@ -15,7 +15,7 @@ export const site = {
 
 export const navLinks = [
   { href: "/#services", label: "Services" },
-  { href: "/services/shortcodes", label: "Shortcodes & Sender IDs" },
+  { href: "/services/shortcodes", label: "Shortcodes" },
   { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
 ];
