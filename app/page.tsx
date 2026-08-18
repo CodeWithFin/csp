@@ -169,7 +169,7 @@ export default function HomePage() {
             className="object-cover"
             sizes="(min-width: 1280px) 82rem, 100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#04005C]/80 via-[#04005C]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="relative flex h-full flex-col justify-end p-8 md:p-12">
             <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi, Kenya</p>
             <p className="mt-3 max-w-md text-soft">CAK-aligned registration. ODPC-aware opt-in and STOP handling.</p>

@@ -8,7 +8,7 @@ export function UseCaseImage({
   image?: StaticImageData;
 }) {
   return (
-    <div className="relative h-80 w-full overflow-hidden bg-night sm:h-96 md:h-auto md:min-h-[32rem] md:w-[62%]">
+    <div className="relative h-80 w-full overflow-hidden bg-[#1a1a1a] sm:h-96 md:h-auto md:min-h-[32rem] md:w-[62%]">
       {image ? (
         <Image
           src={image}

@@ -3,15 +3,15 @@
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
-  --color-ink: #04005c;
+  --color-ink: #0c1100;
   --color-muted: #4d4d4d;
   --color-body: #333333;
   --color-line: #cccccc;
   --color-cream: #fdfcfc;
   --color-wash: #eeeeee;
-  --color-night: #04005c;
-  --color-card: #160070;
-  --color-edge: #2a1480;
+  --color-night: #040600;
+  --color-card: #262626;
+  --color-edge: #2d2c2c;
   --color-dim: #4d4d4d;
   --color-soft: #e7e3e0;
   --color-live: #12866f;
@@ -30,7 +30,7 @@ body {
 }
 
 ::selection {
-  background: #04005c;
+  background: #0c1100;
   color: #fff;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .field-select {
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%2304005C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%230c1100' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1.15rem center;
   background-size: 16px 16px;
