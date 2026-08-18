@@ -5,6 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { PricingCards } from "@/components/pricing-cards";
 import { SectionLabel } from "@/components/section-label";
 import { SmsThread } from "@/components/sms-thread";
+import { UseCaseImage } from "@/components/use-case-image";
 import { ArrowUpRight } from "@/components/icons";
 import {
   howItWorks,
@@ -105,11 +106,7 @@ export default function ShortcodesPage() {
                     ))}
                   </div>
                 </div>
-                <div className="flex h-56 w-full items-end justify-end overflow-hidden bg-[#1a1a1a] p-8 md:h-auto md:w-[55%]">
-                  <span className="font-display text-[3.5rem] font-medium tracking-tighter text-white/15 md:text-[5rem]">
-                    {item.title}
-                  </span>
-                </div>
+                <UseCaseImage title={item.title} image={item.image} />
               </div>
             ))}
           </div>

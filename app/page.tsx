@@ -4,6 +4,7 @@ import { FaqList } from "@/components/faq-list";
 import { ProductMarquee } from "@/components/product-marquee";
 import { SectionLabel } from "@/components/section-label";
 import { HeroThumb } from "@/components/hero-thumb";
+import { UseCaseImage } from "@/components/use-case-image";
 import { ArrowRight, ArrowUpRight } from "@/components/icons";
 import { generalFaqs, services, site, useCases } from "@/lib/site";
 
@@ -143,11 +144,7 @@ export default function HomePage() {
                     ))}
                   </div>
                 </div>
-                <div className="flex h-64 w-full items-center justify-center overflow-hidden bg-[#1a1a1a] md:h-auto md:w-[55%]">
-                  <span className="font-display text-[4rem] font-medium tracking-tighter text-white/15 transition-transform duration-700 group-hover:scale-105 md:text-[6rem]">
-                    {item.title}
-                  </span>
-                </div>
+                <UseCaseImage title={item.title} image={item.image} />
               </Link>
             ))}
           </div>

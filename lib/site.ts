@@ -1,3 +1,8 @@
+import type { StaticImageData } from "next/image";
+import campaignImage from "@/assets/images/campain.jpg";
+import leadCaptureImage from "@/assets/images/lead-capture.jpg";
+import votingImage from "@/assets/images/voting-1.jpg";
+
 export const site = {
   name: "Siscom Connect",
   shortName: "Siscom",
@@ -108,21 +113,29 @@ export const whyChoose = [
   "Support is a phone call or WhatsApp message away, day or night.",
 ];
 
-export const useCases = [
+export const useCases: {
+  title: string;
+  body: string;
+  tags: string[];
+  image?: StaticImageData;
+}[] = [
   {
     title: "Campaigns",
     body: "Reply-to-win promotions and interactive polls on one code.",
     tags: ["Promotions", "Polls"],
+    image: campaignImage,
   },
   {
     title: "Voting",
     body: "Keyword-based voting with live tallies and duplicate checks.",
     tags: ["Live tallies", "Keywords"],
+    image: votingImage,
   },
   {
     title: "Lead capture",
     body: "A text-in keyword turns adverts into a qualified contact list.",
     tags: ["Keywords", "CRM"],
+    image: leadCaptureImage,
   },
   {
     title: "Subscriptions",
