@@ -7,7 +7,7 @@ import { ProductMarquee } from "@/components/product-marquee";
 import { SectionLabel } from "@/components/section-label";
 import { HomeHero } from "@/components/home-hero";
 import { UseCaseImage } from "@/components/use-case-image";
-import { ArrowRight } from "@/components/icons";
+import { ArrowRight, ArrowUpRight } from "@/components/icons";
 import { generalFaqs, services, useCases } from "@/lib/site";
 
 export default function HomePage() {
