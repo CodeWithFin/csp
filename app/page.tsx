@@ -13,7 +13,6 @@ export default function HomePage() {
     <>
       <section className="px-6 pb-20 pt-16 md:px-12 md:pt-24 lg:px-20">
         <div className="mx-auto mb-16 flex max-w-[82rem] flex-col">
-          <p className="mb-6 text-sm uppercase tracking-wider text-body">Built &amp; supported from Nairobi</p>
           <div className="flex flex-col items-start gap-4 overflow-hidden md:flex-row md:items-center md:gap-6">
             <HeroThumb />
             <h1 className="font-display text-[3.25rem] font-semibold leading-[1.1] tracking-tighter text-ink md:text-[6rem]">
