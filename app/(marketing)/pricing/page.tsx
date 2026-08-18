@@ -24,7 +24,6 @@ export default function PricingPage() {
   return (
     <>
       <PageHero
-        eyebrow="Pricing"
         title="Quote-based. No vanity numbers."
         body="Volume, code type and channels differ by client, so we price after a short call. Sender ID registration has no separate admin fee."
       />
