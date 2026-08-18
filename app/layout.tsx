@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   },
   description: site.description,
   metadataBase: new URL(site.url),
+  icons: {
+    icon: [{ url: "/favicon.webp", type: "image/webp" }],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
