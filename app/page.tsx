@@ -50,21 +50,19 @@ export default function HomePage() {
           We run your traffic across Safaricom, Airtel and Telkom — and we handle the CAK paperwork so you can go live
           without a second vendor.
         </h2>
-        <div className="grid grid-cols-1 items-end gap-16 md:grid-cols-2 md:gap-8">
-          <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:gap-x-16">
+        <div className="grid grid-cols-1 items-end gap-16 md:grid-cols-2 md:gap-12">
+          <div className="grid grid-cols-1 gap-x-12 gap-y-14 sm:grid-cols-2 md:gap-x-20 md:gap-y-16">
             {[
               { value: "3/3", note: "Networks", label: "Safaricom, Airtel, Telkom" },
               { value: "0", note: "Admin fee", label: "Sender ID registration" },
               { value: "1–3", note: "Days", label: "Typical sender ID approval" },
               { value: "NBO", note: "Kenya", label: "Built & supported from Nairobi" },
             ].map((stat) => (
-              <div key={stat.label} className="flex flex-col border-l border-line pl-6">
-                <div className="flex items-start gap-2">
-                  <span className="font-display text-[3.5rem] font-medium leading-none tracking-tighter text-ink md:text-[4.5rem]">
-                    {stat.value}
-                  </span>
-                  <span className="mt-2 text-sm font-normal text-body">({stat.note})</span>
-                </div>
+              <div key={stat.label} className="flex flex-col border-l border-line pl-6 md:pl-8">
+                <span className="font-display text-[3.25rem] font-medium leading-[1.1] tracking-tight text-ink md:text-[4rem]">
+                  {stat.value}
+                </span>
+                <span className="mt-3 text-sm font-normal text-body">({stat.note})</span>
                 <span className="mt-2 text-base font-normal text-body">{stat.label}</span>
               </div>
             ))}

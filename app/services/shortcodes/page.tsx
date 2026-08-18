@@ -37,17 +37,17 @@ export default function ShortcodesPage() {
           Once it&apos;s live, the same code handles campaigns, voting, lead capture and paid subscriptions, with every
           reply logged and pushed to your systems in real time.
         </p>
-        <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 border-t border-line pt-12 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-x-12 gap-y-14 border-t border-line pt-12 md:grid-cols-3 md:gap-x-16">
           {[
             { value: "3/3", label: "Networks covered" },
             { value: "0", label: "Admin fee on sender ID" },
             { value: "1–3", label: "Days to approval" },
           ].map((s) => (
-            <div key={s.label} className="border-l border-line pl-6">
-              <div className="font-display text-[3.5rem] font-medium leading-none tracking-tighter text-ink md:text-[4.5rem]">
+            <div key={s.label} className="border-l border-line pl-6 md:pl-8">
+              <div className="font-display text-[3.25rem] font-medium leading-[1.1] tracking-tight text-ink md:text-[4rem]">
                 {s.value}
               </div>
-              <p className="mt-3 text-body">{s.label}</p>
+              <p className="mt-4 text-body">{s.label}</p>
             </div>
           ))}
         </div>
