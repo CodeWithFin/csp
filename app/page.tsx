@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ContactMarquee } from "@/components/contact-marquee";
 import { FaqList } from "@/components/faq-list";
-import { NetworkPills } from "@/components/network-pills";
 import { ProductMarquee } from "@/components/product-marquee";
 import { SectionLabel } from "@/components/section-label";
 import { HeroThumb } from "@/components/hero-thumb";
@@ -39,9 +38,6 @@ export default function HomePage() {
               See shortcodes &amp; sender IDs
               <ArrowRight className="transition-transform group-hover:translate-x-1" />
             </Link>
-          </div>
-          <div className="mt-10">
-            <NetworkPills />
           </div>
         </div>
         <ProductMarquee />
@@ -175,12 +171,9 @@ export default function HomePage() {
               <div key={i} className="border border-white/10" />
             ))}
           </div>
-          <div className="relative flex h-full flex-col justify-between p-8 md:p-12">
-            <NetworkPills />
-            <div>
-              <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi · Kenya</p>
-              <p className="mt-3 max-w-md text-soft">CAK-aligned registration. ODPC-aware opt-in and STOP handling.</p>
-            </div>
+          <div className="relative flex h-full flex-col justify-end p-8 md:p-12">
+            <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi · Kenya</p>
+            <p className="mt-3 max-w-md text-soft">CAK-aligned registration. ODPC-aware opt-in and STOP handling.</p>
           </div>
         </div>
       </section>

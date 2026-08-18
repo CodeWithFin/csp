@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ContactMarquee } from "@/components/contact-marquee";
 import { FaqList } from "@/components/faq-list";
-import { NetworkPills } from "@/components/network-pills";
 import { PageHero } from "@/components/page-hero";
 import { PricingCards } from "@/components/pricing-cards";
 import { SectionLabel } from "@/components/section-label";
@@ -37,7 +36,6 @@ export default function ShortcodesPage() {
           Once it&apos;s live, the same code handles campaigns, voting, lead capture and paid subscriptions, with every
           reply logged and pushed to your systems in real time.
         </p>
-        <NetworkPills />
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 border-t border-line pt-12 md:grid-cols-3">
           {[
             { value: "3/3", label: "Networks covered" },
