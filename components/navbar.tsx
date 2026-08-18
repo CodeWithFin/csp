@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import logo from "@/assets/images/siscom-logo.png";
 import { CloseIcon, MenuIcon } from "./icons";
@@ -9,16 +10,29 @@ import { navLinks } from "@/lib/site";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const overlay = usePathname() === "/";
 
   return (
-    <nav className="relative z-50 flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20">
+    <nav
+      className={`z-50 flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20 ${
+        overlay ? "absolute inset-x-0 top-0" : "relative"
+      }`}
+    >
       <Link href="/" className="relative flex items-center">
         <Image src={logo} alt="Siscom" className="h-[2.2rem] w-auto md:h-[2.475rem]" priority />
       </Link>
 
-      <div className="hidden items-center gap-8 text-sm font-normal text-body md:flex">
+      <div
+        className={`hidden items-center gap-8 text-sm font-normal md:flex ${
+          overlay ? "text-white" : "text-body"
+        }`}
+      >
         {navLinks.map((link) => (
-          <Link key={link.href} href={link.href} className="transition-colors hover:text-ink">
+          <Link
+            key={link.href}
+            href={link.href}
+            className={overlay ? "transition-colors hover:text-white/70" : "transition-colors hover:text-ink"}
+          >
             {link.label}
           </Link>
         ))}
@@ -27,7 +41,11 @@ export function Navbar() {
       <div className="flex items-center gap-3">
         <Link
           href="/contact"
-          className="hidden rounded-full border border-brand px-4 py-2 text-sm text-brand transition-colors hover:bg-brand hover:text-white md:inline-flex"
+          className={`hidden rounded-full border px-4 py-2 text-sm transition-colors md:inline-flex ${
+            overlay
+              ? "border-white text-white hover:bg-white hover:text-ink"
+              : "border-brand text-brand hover:bg-brand hover:text-white"
+          }`}
         >
           Contact
         </Link>
@@ -42,7 +60,7 @@ export function Navbar() {
         </Link>
         <button
           type="button"
-          className="flex items-center justify-center text-[1.5rem] text-ink md:hidden"
+          className={`flex items-center justify-center text-[1.5rem] md:hidden ${overlay ? "text-white" : "text-ink"}`}
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((v) => !v)}
         >
