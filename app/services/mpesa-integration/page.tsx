@@ -26,7 +26,7 @@ const points = [
   },
   {
     title: "Tied into SMS & USSD",
-    body: "The pay step lives inside the journey you already run — not a separate M-Pesa vendor with a different SLA.",
+    body: "The pay step lives inside the journey you already run, not a separate M-Pesa vendor with a different SLA.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function MpesaPage() {
       <PageHero
         eyebrow="Services"
         title="M-Pesa inside the same journey"
-        body="STK Push, B2C and reconciliation wired directly into your messaging and USSD flows — one account, one webhook, one team in Nairobi."
+        body="STK Push, B2C and reconciliation wired directly into your messaging and USSD flows. One account, one webhook, one team in Nairobi."
       />
       <section className="mx-auto max-w-[82rem] px-6 pb-24 md:px-12 lg:px-20">
         <SectionLabel label="Capabilities" widthClass="w-36" />

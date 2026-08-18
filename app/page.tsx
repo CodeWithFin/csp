@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import nairobi from "@/assets/images/nairobi.jpg";
 import { ContactMarquee } from "@/components/contact-marquee";
 import { FaqList } from "@/components/faq-list";
 import { ProductMarquee } from "@/components/product-marquee";
@@ -13,7 +15,6 @@ export default function HomePage() {
     <>
       <section className="px-6 pb-20 pt-16 md:px-12 md:pt-24 lg:px-20">
         <div className="mx-auto mb-16 flex max-w-[82rem] flex-col">
-          <p className="mb-6 text-sm uppercase tracking-wider text-body">Built &amp; supported from Nairobi</p>
           <div className="flex flex-col items-start gap-4 overflow-hidden md:flex-row md:items-center md:gap-6">
             <HeroThumb />
             <h1 className="font-display text-[3.25rem] font-semibold leading-[1.1] tracking-tighter text-ink md:text-[6rem]">
@@ -47,24 +48,22 @@ export default function HomePage() {
       <section id="about" className="mx-auto max-w-[82rem] px-6 py-20 md:px-12 md:py-28 lg:px-20">
         <SectionLabel label="About" widthClass="w-24" />
         <h2 className="font-display mb-20 max-w-5xl text-[2rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-          We run your traffic across Safaricom, Airtel and Telkom — and we handle the CAK paperwork so you can go live
+          We run your traffic across Safaricom, Airtel and Telkom, and we handle the CAK paperwork so you can go live
           without a second vendor.
         </h2>
-        <div className="grid grid-cols-1 items-end gap-16 md:grid-cols-2 md:gap-8">
-          <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:gap-x-16">
+        <div className="grid grid-cols-1 items-end gap-16 md:grid-cols-2 md:gap-12">
+          <div className="grid grid-cols-1 gap-x-12 gap-y-14 sm:grid-cols-2 md:gap-x-20 md:gap-y-16">
             {[
               { value: "3/3", note: "Networks", label: "Safaricom, Airtel, Telkom" },
               { value: "0", note: "Admin fee", label: "Sender ID registration" },
               { value: "1–3", note: "Days", label: "Typical sender ID approval" },
               { value: "NBO", note: "Kenya", label: "Built & supported from Nairobi" },
             ].map((stat) => (
-              <div key={stat.label} className="flex flex-col border-l border-line pl-6">
-                <div className="flex items-start gap-2">
-                  <span className="font-display text-[3.5rem] font-medium leading-none tracking-tighter text-ink md:text-[4.5rem]">
-                    {stat.value}
-                  </span>
-                  <span className="mt-2 text-sm font-normal text-body">({stat.note})</span>
-                </div>
+              <div key={stat.label} className="flex flex-col border-l border-line pl-6 md:pl-8">
+                <span className="font-display text-[3.25rem] font-medium leading-[1.1] tracking-tight text-ink md:text-[4rem]">
+                  {stat.value}
+                </span>
+                <span className="mt-3 text-sm font-normal text-body">({stat.note})</span>
                 <span className="mt-2 text-base font-normal text-body">{stat.label}</span>
               </div>
             ))}
@@ -128,7 +127,7 @@ export default function HomePage() {
                 href="/services/shortcodes"
                 className="group flex flex-col overflow-hidden border border-edge bg-card md:flex-row"
               >
-                <div className="flex w-full flex-col justify-between p-8 md:w-[45%] md:p-12">
+                <div className="flex w-full flex-col justify-between p-8 md:w-[38%] md:p-12 lg:p-16">
                   <div>
                     <h3 className="font-display mb-4 text-[2rem] font-medium tracking-tight text-white">{item.title}</h3>
                     <p className="mb-8 text-base leading-relaxed text-soft">{item.body}</p>
@@ -155,21 +154,24 @@ export default function HomePage() {
         <SectionLabel label="About Us" widthClass="w-28" />
         <div className="mb-20 flex flex-col justify-between gap-12 md:flex-row md:items-end">
           <h2 className="font-display max-w-4xl text-[2.5rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-            A Nairobi team that answers the phone when a campaign is live — not a ticket that waits until morning.
+            A Nairobi team that answers the phone when a campaign is live, not a ticket that waits until morning.
           </h2>
           <p className="max-w-[444px] text-base text-body md:text-right">
-            Shared or dedicated shortcodes, sender IDs on all three networks, and the rest of your stack — bulk SMS,
-            USSD, WhatsApp, M-Pesa — on one account.
+            Shared or dedicated shortcodes, sender IDs on all three networks, and the rest of your stack: bulk SMS,
+            USSD, WhatsApp, M-Pesa, on one account.
           </p>
         </div>
         <div className="relative h-[50vw] overflow-hidden rounded-2xl bg-night md:h-[28rem]">
-          <div className="absolute inset-0 grid grid-cols-6 grid-rows-4 gap-px p-8 opacity-40">
-            {Array.from({ length: 24 }).map((_, i) => (
-              <div key={i} className="border border-white/10" />
-            ))}
-          </div>
+          <Image
+            src={nairobi}
+            alt="Nairobi, Kenya"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1280px) 82rem, 100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="relative flex h-full flex-col justify-end p-8 md:p-12">
-            <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi · Kenya</p>
+            <p className="font-display text-3xl font-medium tracking-tight text-white md:text-5xl">Nairobi, Kenya</p>
             <p className="mt-3 max-w-md text-soft">CAK-aligned registration. ODPC-aware opt-in and STOP handling.</p>
           </div>
         </div>
@@ -182,7 +184,7 @@ export default function HomePage() {
             <div>
               <p className="mb-8 text-[1.25rem] font-medium leading-snug tracking-tight text-ink md:text-[1.5rem]">
                 Traffic is only useful if it actually lands. We register your sender ID with Safaricom, Airtel and
-                Telkom, then keep two-way flows inside ODPC and CAK rules — without you chasing three operator desks.
+                Telkom, then keep two-way flows inside ODPC and CAK rules, without you chasing three operator desks.
               </p>
               <div>
                 <div className="font-display text-[1.125rem] font-semibold text-ink">Siscom Connect</div>

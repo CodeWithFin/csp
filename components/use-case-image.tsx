@@ -8,14 +8,14 @@ export function UseCaseImage({
   image?: StaticImageData;
 }) {
   return (
-    <div className="relative h-64 w-full overflow-hidden bg-[#1a1a1a] md:h-auto md:min-h-full md:w-[55%]">
+    <div className="relative h-80 w-full overflow-hidden bg-[#1a1a1a] sm:h-96 md:h-auto md:min-h-[32rem] md:w-[62%]">
       {image ? (
         <Image
           src={image}
           alt={title}
           fill
           className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-          sizes="(min-width: 768px) 55vw, 100vw"
+          sizes="(min-width: 768px) 62vw, 100vw"
         />
       ) : (
         <div className="flex h-full items-center justify-center md:items-end md:justify-end md:p-8">

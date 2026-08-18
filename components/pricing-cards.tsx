@@ -22,7 +22,7 @@ export function PricingCards({
           )}
           <h3 className="font-display text-[1.75rem] font-medium tracking-tight">{tier.name}</h3>
           <p className={`mt-2 text-sm ${tier.featured ? "text-soft" : "text-muted"}`}>
-            Pricing depends on volume and setup — we&apos;ll quote it plainly.
+            Pricing depends on volume and setup. We&apos;ll quote it plainly.
           </p>
           <ul className="mt-8 flex flex-col gap-3 text-sm">
             {tier.points.map((p) => (

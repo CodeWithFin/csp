@@ -9,7 +9,7 @@ export const site = {
   wordmark: "Siscom Connect",
   tagline: "One connection. Every Kenyan network.",
   description:
-    "Bulk SMS, USSD, WhatsApp and CAK-registered shortcodes & sender IDs — on a single account, with a person on the other end of the phone when you need one.",
+    "Bulk SMS, USSD, WhatsApp and CAK-registered shortcodes & sender IDs on a single account, with a person on the other end of the phone when you need one.",
   email: "tech@siscom.tech",
   phoneDisplay: "",
   phoneTel: "",
@@ -50,7 +50,7 @@ export const services: {
     title: "USSD codes",
     tags: ["Any handset", "Menu builder", "Payments"],
     blurb:
-      "Menu-driven, internet-free experiences that work on any handset — for sign-ups, payments and support.",
+      "Menu-driven, internet-free experiences that work on any handset, for sign-ups, payments and support.",
   },
   {
     slug: "whatsapp",
@@ -107,7 +107,7 @@ export const shortcodeFeatures = [
 export const whyChoose = [
   "A short, memorable code lifts response and recall over a long mobile number.",
   "A registered sender ID builds trust the moment your name appears on the screen.",
-  "We carry the CAK registration process for you — no separate admin fee.",
+  "We carry the CAK registration process for you, with no separate admin fee.",
   "Two-way flows mean customers can actually talk back, not just receive.",
   "Opt-in and opt-out are tracked automatically, so compliance isn't manual work.",
   "Support is a phone call or WhatsApp message away, day or night.",
@@ -139,7 +139,7 @@ export const useCases: {
   },
   {
     title: "Subscriptions",
-    body: "Paid opt-in content — tips, alerts, updates — with auto-renewal.",
+    body: "Paid opt-in content like tips, alerts and updates, with auto-renewal.",
     tags: ["Opt-in", "Billing"],
   },
   {
@@ -213,15 +213,15 @@ export const shortcodeTiers = [
 export const shortcodeFaqs = [
   {
     q: "How do I register a sender ID in Kenya?",
-    a: "Alphanumeric sender IDs are registered with Safaricom, Airtel and Telkom under the CAK framework. We handle the submission during onboarding — you'll need a signed, stamped authorisation letter on company letterhead, and most IDs clear in 1–3 business days.",
+    a: "Alphanumeric sender IDs are registered with Safaricom, Airtel and Telkom under the CAK framework. We handle the submission during onboarding. You'll need a signed, stamped authorisation letter on company letterhead, and most IDs clear in 1–3 business days.",
   },
   {
     q: "What's the difference between a shortcode and a sender ID?",
-    a: "A shortcode is the number customers text in to (e.g. 40XXX) — it enables two-way conversation. A sender ID is the name customers see when a message is sent to them (e.g. SISCOM) — it's one-way branding. Most businesses use both together.",
+    a: "A shortcode is the number customers text in to (e.g. 40XXX). It enables two-way conversation. A sender ID is the name customers see when a message is sent to them (e.g. SISCOM). It's one-way branding. Most businesses use both together.",
   },
   {
     q: "Can customers reply to my messages?",
-    a: "Yes — shortcodes support genuine two-way SMS. Replies are matched to keywords you configure and can trigger an auto-response or route straight to your team via webhook.",
+    a: "Yes. Shortcodes support genuine two-way SMS. Replies are matched to keywords you configure and can trigger an auto-response or route straight to your team via webhook.",
   },
   {
     q: "How do you handle opt-in and opt-out?",
@@ -229,7 +229,7 @@ export const shortcodeFaqs = [
   },
   {
     q: "Can this bundle with bulk SMS, USSD and WhatsApp?",
-    a: "Yes — shortcodes sit on the same account as the rest of our services, so you get one bill and one support contact instead of juggling providers.",
+    a: "Yes. Shortcodes sit on the same account as the rest of our services, so you get one bill and one support contact instead of juggling providers.",
   },
 ];
 
@@ -240,7 +240,7 @@ export const generalFaqs = [
   },
   {
     q: "What are the delivery rates?",
-    a: "We route across Safaricom, Airtel and Telkom and surface live delivery reports so you can see what landed. Rates vary by destination network and traffic class — we'll walk you through expected performance for your use case rather than quoting a generic figure.",
+    a: "We route across Safaricom, Airtel and Telkom and surface live delivery reports so you can see what landed. Rates vary by destination network and traffic class. We'll walk you through expected performance for your use case rather than quoting a generic figure.",
   },
   {
     q: "Is there a minimum commitment?",

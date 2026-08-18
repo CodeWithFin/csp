@@ -1,6 +1,6 @@
 # Siscom Connect
 
-Marketing site for Siscom Connect — bulk SMS, USSD, WhatsApp, shortcodes & sender IDs, and M-Pesa — built with Next.js and shipped as a Docker image.
+Marketing site for Siscom Connect: bulk SMS, USSD, WhatsApp, shortcodes and sender IDs, and M-Pesa. Built with Next.js and shipped as a Docker image.
 
 ## Local development
 

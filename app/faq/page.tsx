@@ -16,7 +16,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="FAQ"
         title="Questions we get before a code goes live"
-        body="We're here to answer your questions and provide clarity — on delivery, onboarding, and how shortcodes sit next to the rest of the stack."
+        body="We're here to answer your questions and provide clarity on delivery, onboarding, and how shortcodes sit next to the rest of the stack."
       />
       <section className="mx-auto max-w-[82rem] px-6 pb-20 md:px-12 lg:px-20">
         <SectionLabel label="General" widthClass="w-28" />

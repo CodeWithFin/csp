@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shortcodes & Sender IDs",
   description:
-    "Shared or dedicated shortcodes and CAK-aligned sender ID registration on Safaricom, Airtel and Telkom — handled during onboarding, at no extra charge.",
+    "Shared or dedicated shortcodes and CAK-aligned sender ID registration on Safaricom, Airtel and Telkom, handled during onboarding, at no extra charge.",
 };
 
 export default function ShortcodesPage() {
@@ -29,7 +29,7 @@ export default function ShortcodesPage() {
       <PageHero
         eyebrow="Deep dive"
         title="Shortcodes & sender IDs for Kenyan businesses"
-        body="Get a memorable number your customers can text, and a branded name they see on every message. Siscom sets up shared or dedicated shortcodes and takes the sender ID paperwork — the CAK-aligned registration with Safaricom, Airtel and Telkom — off your plate during onboarding, at no extra charge."
+        body="Get a memorable number your customers can text, and a branded name they see on every message. Siscom sets up shared or dedicated shortcodes and takes the sender ID paperwork (the CAK-aligned registration with Safaricom, Airtel and Telkom) off your plate during onboarding, at no extra charge."
       />
 
       <section className="mx-auto max-w-[82rem] px-6 pb-16 md:px-12 lg:px-20">
@@ -37,17 +37,17 @@ export default function ShortcodesPage() {
           Once it&apos;s live, the same code handles campaigns, voting, lead capture and paid subscriptions, with every
           reply logged and pushed to your systems in real time.
         </p>
-        <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 border-t border-line pt-12 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-x-12 gap-y-14 border-t border-line pt-12 md:grid-cols-3 md:gap-x-16">
           {[
             { value: "3/3", label: "Networks covered" },
             { value: "0", label: "Admin fee on sender ID" },
             { value: "1–3", label: "Days to approval" },
           ].map((s) => (
-            <div key={s.label} className="border-l border-line pl-6">
-              <div className="font-display text-[3.5rem] font-medium leading-none tracking-tighter text-ink md:text-[4.5rem]">
+            <div key={s.label} className="border-l border-line pl-6 md:pl-8">
+              <div className="font-display text-[3.25rem] font-medium leading-[1.1] tracking-tight text-ink md:text-[4rem]">
                 {s.value}
               </div>
-              <p className="mt-3 text-body">{s.label}</p>
+              <p className="mt-4 text-body">{s.label}</p>
             </div>
           ))}
         </div>
@@ -93,7 +93,7 @@ export default function ShortcodesPage() {
           <div className="flex flex-col gap-12">
             {useCases.map((item) => (
               <div key={item.title} className="group flex flex-col overflow-hidden border border-edge bg-card md:flex-row">
-                <div className="flex w-full flex-col justify-between p-8 md:w-[45%] md:p-12">
+                <div className="flex w-full flex-col justify-between p-8 md:w-[38%] md:p-12 lg:p-16">
                   <div>
                     <h3 className="font-display mb-4 text-[2rem] font-medium tracking-tight text-white">{item.title}</h3>
                     <p className="mb-8 text-base leading-relaxed text-soft">{item.body}</p>
@@ -134,7 +134,7 @@ export default function ShortcodesPage() {
       <section id="pricing" className="mx-auto max-w-[82rem] px-6 py-24 md:px-12 lg:px-20">
         <SectionLabel label="Pricing" widthClass="w-28" />
         <h2 className="font-display mb-16 max-w-4xl text-[2rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-          Quote-based tiers — volume and code type decide the number.
+          Quote-based tiers. Volume and code type decide the number.
         </h2>
         <PricingCards tiers={shortcodeTiers} />
       </section>

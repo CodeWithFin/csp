@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const points = [
   {
     title: "Templates",
-    body: "Approved message templates for alerts, OTPs and reminders — sent from the same account as your SMS.",
+    body: "Approved message templates for alerts, OTPs and reminders, sent from the same account as your SMS.",
   },
   {
     title: "Media messages",
