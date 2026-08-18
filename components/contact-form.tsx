@@ -90,7 +90,7 @@ export function ContactForm() {
           <select
             name="interest"
             defaultValue="Shortcodes & Sender IDs"
-            className="rounded-full border border-line bg-white px-4 py-3 text-ink outline-none focus:border-ink"
+            className="field-select rounded-full border border-line bg-white px-4 py-3 text-ink outline-none focus:border-ink"
           >
             {interests.map((opt) => (
               <option key={opt}>{opt}</option>
