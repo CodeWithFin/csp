@@ -3,22 +3,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "@/assets/images/siscom-logo.png";
-import { CloseIcon, MenuIcon } from "./icons";
-import { navLinks } from "@/lib/site";
+import { ArrowUpRight, CloseIcon, MenuIcon } from "./icons";
+import { navLinks, site } from "@/lib/site";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
-  const overlay = usePathname() === "/";
+  const pathname = usePathname();
+  const overlay = pathname === "/" && !open;
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <nav
-      className={`z-50 flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20 ${
+      className={`z-[60] flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20 ${
         overlay ? "absolute inset-x-0 top-0" : "relative"
       }`}
     >
-      <Link href="/" className="relative flex items-center">
+      <Link href="/" className="relative z-50 flex items-center" onClick={() => setOpen(false)}>
         <Image src={logo} alt="Siscom" className="h-[2.2rem] w-auto md:h-[2.475rem]" priority />
       </Link>
 
@@ -38,7 +50,7 @@ export function Navbar() {
         ))}
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="relative z-50 flex items-center gap-3">
         <Link
           href="/contact"
           className={`hidden rounded-full border px-4 py-2 text-sm transition-colors md:inline-flex ${
@@ -62,6 +74,7 @@ export function Navbar() {
           type="button"
           className={`flex items-center justify-center text-[1.5rem] md:hidden ${overlay ? "text-white" : "text-ink"}`}
           aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <CloseIcon /> : <MenuIcon />}
@@ -69,20 +82,46 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="absolute left-0 right-0 top-full border-b border-line bg-cream px-6 py-6 md:hidden">
-          <div className="flex flex-col gap-4 text-body">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="text-base hover:text-ink">
-                {link.label}
+        <div className="fixed inset-0 z-40 flex flex-col bg-cream px-6 pb-10 pt-24 md:hidden">
+          <div className="flex flex-1 flex-col justify-center">
+            {navLinks.map((link, index) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="group flex items-center justify-between border-b border-line py-5 first:border-t"
+              >
+                <span className="flex items-baseline gap-4">
+                  <span className="font-display text-xs font-medium tracking-widest text-muted">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="font-display text-[2rem] font-medium leading-none tracking-tight text-ink">
+                    {link.label}
+                  </span>
+                </span>
+                <ArrowUpRight className="text-muted transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
               </Link>
             ))}
+          </div>
+
+          <div className="mt-10 flex flex-col gap-8">
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex w-max items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm text-white"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm text-white"
             >
               Get Started
+              <ArrowUpRight />
             </Link>
+            <div className="flex flex-col gap-2 text-sm text-muted">
+              <a href={`mailto:${site.email}`} className="transition-colors hover:text-ink">
+                {site.email}
+              </a>
+              <a href={site.whatsappUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">
+                WhatsApp {site.phoneDisplay}
+              </a>
+              <span>{site.location}</span>
+            </div>
           </div>
         </div>
       )}
