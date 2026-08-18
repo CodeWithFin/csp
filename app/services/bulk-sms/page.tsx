@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const points = [
   {
     title: "Reach",
-    body: "One API and dashboard for Safaricom, Airtel and Telkom — no stitching three operator accounts together.",
+    body: "One API and dashboard for Safaricom, Airtel and Telkom, with no need to stitch three operator accounts together.",
   },
   {
     title: "Delivery reporting",
@@ -26,7 +26,7 @@ const points = [
   },
   {
     title: "Scheduling",
-    body: "Queue campaigns for morning, payday or a TV spot — and pause them from the same screen if copy needs a fix.",
+    body: "Queue campaigns for morning, payday or a TV spot, and pause them from the same screen if copy needs a fix.",
   },
   {
     title: "Personalisation",
@@ -40,7 +40,7 @@ export default function BulkSmsPage() {
       <PageHero
         eyebrow="Services"
         title="Bulk SMS across every Kenyan network"
-        body="Send at scale across Safaricom, Airtel and Telkom with live delivery reports and smart routing — then fold the same traffic into shortcodes, USSD and WhatsApp when you need a reply."
+        body="Send at scale across Safaricom, Airtel and Telkom with live delivery reports and smart routing, then fold the same traffic into shortcodes, USSD and WhatsApp when you need a reply."
       />
       <section className="mx-auto max-w-[82rem] px-6 pb-24 md:px-12 lg:px-20">
         <SectionLabel label="Capabilities" widthClass="w-36" />

@@ -34,7 +34,7 @@ export function ContactForm() {
     ].join("\n");
 
     const href = `mailto:${site.email}?subject=${encodeURIComponent(
-      `Siscom enquiry — ${interest || "General"}`,
+      `Siscom enquiry: ${interest || "General"}`,
     )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = href;

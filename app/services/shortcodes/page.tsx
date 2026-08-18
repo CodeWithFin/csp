@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shortcodes & Sender IDs",
   description:
-    "Shared or dedicated shortcodes and CAK-aligned sender ID registration on Safaricom, Airtel and Telkom — handled during onboarding, at no extra charge.",
+    "Shared or dedicated shortcodes and CAK-aligned sender ID registration on Safaricom, Airtel and Telkom, handled during onboarding, at no extra charge.",
 };
 
 export default function ShortcodesPage() {
@@ -29,7 +29,7 @@ export default function ShortcodesPage() {
       <PageHero
         eyebrow="Deep dive"
         title="Shortcodes & sender IDs for Kenyan businesses"
-        body="Get a memorable number your customers can text, and a branded name they see on every message. Siscom sets up shared or dedicated shortcodes and takes the sender ID paperwork — the CAK-aligned registration with Safaricom, Airtel and Telkom — off your plate during onboarding, at no extra charge."
+        body="Get a memorable number your customers can text, and a branded name they see on every message. Siscom sets up shared or dedicated shortcodes and takes the sender ID paperwork (the CAK-aligned registration with Safaricom, Airtel and Telkom) off your plate during onboarding, at no extra charge."
       />
 
       <section className="mx-auto max-w-[82rem] px-6 pb-16 md:px-12 lg:px-20">
@@ -134,7 +134,7 @@ export default function ShortcodesPage() {
       <section id="pricing" className="mx-auto max-w-[82rem] px-6 py-24 md:px-12 lg:px-20">
         <SectionLabel label="Pricing" widthClass="w-28" />
         <h2 className="font-display mb-16 max-w-4xl text-[2rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-          Quote-based tiers — volume and code type decide the number.
+          Quote-based tiers. Volume and code type decide the number.
         </h2>
         <PricingCards tiers={shortcodeTiers} />
       </section>

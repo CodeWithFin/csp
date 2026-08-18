@@ -53,7 +53,7 @@ export default function PricingPage() {
       <section className="mx-auto max-w-[82rem] px-6 py-20 md:px-12 lg:px-20">
         <SectionLabel label="Shortcodes" widthClass="w-32" />
         <h2 className="font-display mb-16 max-w-4xl text-[2rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-          Shortcode tiers — shared, dedicated or enterprise.
+          Shortcode tiers: shared, dedicated or enterprise.
         </h2>
         <PricingCards tiers={shortcodeTiers} />
         <div className="mt-12 flex flex-wrap gap-4">

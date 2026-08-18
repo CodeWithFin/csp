@@ -9,7 +9,7 @@ export function Footer() {
         <div className="mb-24 flex flex-col items-start justify-between gap-16 lg:flex-row">
           <div className="flex max-w-lg flex-col gap-8">
             <h2 className="font-display text-[2rem] font-medium leading-snug tracking-tight md:text-[2.5rem]">
-              One account for SMS, USSD, WhatsApp and M-Pesa — built from Nairobi.
+              One account for SMS, USSD, WhatsApp and M-Pesa, built from Nairobi.
             </h2>
             <Link
               href="/contact"

@@ -46,7 +46,7 @@ export default function HomePage() {
       <section id="about" className="mx-auto max-w-[82rem] px-6 py-20 md:px-12 md:py-28 lg:px-20">
         <SectionLabel label="About" widthClass="w-24" />
         <h2 className="font-display mb-20 max-w-5xl text-[2rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-          We run your traffic across Safaricom, Airtel and Telkom — and we handle the CAK paperwork so you can go live
+          We run your traffic across Safaricom, Airtel and Telkom, and we handle the CAK paperwork so you can go live
           without a second vendor.
         </h2>
         <div className="grid grid-cols-1 items-end gap-16 md:grid-cols-2 md:gap-12">
@@ -152,11 +152,11 @@ export default function HomePage() {
         <SectionLabel label="About Us" widthClass="w-28" />
         <div className="mb-20 flex flex-col justify-between gap-12 md:flex-row md:items-end">
           <h2 className="font-display max-w-4xl text-[2.5rem] font-medium leading-[1.2] tracking-tight text-ink md:text-[3.5rem]">
-            A Nairobi team that answers the phone when a campaign is live — not a ticket that waits until morning.
+            A Nairobi team that answers the phone when a campaign is live, not a ticket that waits until morning.
           </h2>
           <p className="max-w-[444px] text-base text-body md:text-right">
-            Shared or dedicated shortcodes, sender IDs on all three networks, and the rest of your stack — bulk SMS,
-            USSD, WhatsApp, M-Pesa — on one account.
+            Shared or dedicated shortcodes, sender IDs on all three networks, and the rest of your stack: bulk SMS,
+            USSD, WhatsApp, M-Pesa, on one account.
           </p>
         </div>
         <div className="relative h-[50vw] overflow-hidden rounded-2xl bg-night md:h-[28rem]">
@@ -179,7 +179,7 @@ export default function HomePage() {
             <div>
               <p className="mb-8 text-[1.25rem] font-medium leading-snug tracking-tight text-ink md:text-[1.5rem]">
                 Traffic is only useful if it actually lands. We register your sender ID with Safaricom, Airtel and
-                Telkom, then keep two-way flows inside ODPC and CAK rules — without you chasing three operator desks.
+                Telkom, then keep two-way flows inside ODPC and CAK rules, without you chasing three operator desks.
               </p>
               <div>
                 <div className="font-display text-[1.125rem] font-semibold text-ink">Siscom Connect</div>

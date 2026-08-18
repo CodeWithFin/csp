@@ -8,7 +8,7 @@ import { ArrowRight } from "@/components/icons";
 export const metadata: Metadata = {
   title: "USSD codes",
   description:
-    "Menu-driven, internet-free USSD experiences that work on any handset — for sign-ups, payments and support.",
+    "Menu-driven, internet-free USSD experiences that work on any handset, for sign-ups, payments and support.",
 };
 
 const points = [

@@ -15,7 +15,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Talk to a person in Nairobi"
-        body="Tell us what you need to send, collect or collect payment for. We'll come back with a setup path and a quote — not a generic deck."
+        body="Tell us what you need to send, collect or collect payment for. We'll come back with a setup path and a quote, not a generic deck."
       />
       <section className="mx-auto grid max-w-[82rem] grid-cols-1 gap-16 px-6 pb-24 md:px-12 lg:grid-cols-2 lg:px-20">
         <ContactForm />
@@ -38,7 +38,7 @@ export default function ContactPage() {
             <div className="text-sm uppercase tracking-wider text-muted">Studio</div>
             <p className="font-display mt-2 text-2xl tracking-tight text-ink">{site.location}</p>
             <p className="mt-2 max-w-sm text-body">
-              Support is a phone call or WhatsApp message away, day or night — we&apos;ll share the live numbers on the first call.
+              Support is a phone call or WhatsApp message away, day or night. We&apos;ll share the live numbers on the first call.
             </p>
           </div>
         </div>
