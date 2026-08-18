@@ -26,19 +26,22 @@ export default function ContactPage() {
               {site.email}
             </a>
           </div>
-          {site.phoneDisplay ? (
-            <div className="border-l border-line pl-6">
-              <div className="text-sm uppercase tracking-wider text-muted">Phone</div>
-              <a href={`tel:${site.phoneTel}`} className="font-display mt-2 block text-2xl tracking-tight text-ink">
-                {site.phoneDisplay}
-              </a>
-            </div>
-          ) : null}
+          <div className="border-l border-line pl-6">
+            <div className="text-sm uppercase tracking-wider text-muted">WhatsApp</div>
+            <a
+              href={site.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-display mt-2 block text-2xl tracking-tight text-ink"
+            >
+              {site.phoneDisplay}
+            </a>
+          </div>
           <div className="border-l border-line pl-6">
             <div className="text-sm uppercase tracking-wider text-muted">Studio</div>
             <p className="font-display mt-2 text-2xl tracking-tight text-ink">{site.location}</p>
             <p className="mt-2 max-w-sm text-body">
-              Support is a phone call or WhatsApp message away, day or night. We&apos;ll share the live numbers on the first call.
+              Message us on WhatsApp any time. A person in Nairobi will pick it up.
             </p>
           </div>
         </div>
