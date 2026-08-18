@@ -25,13 +25,13 @@ export function Navbar() {
       <div className="flex items-center gap-3">
         <Link
           href="/contact"
-          className="hidden rounded-full border border-ink px-4 py-2 text-sm text-ink transition-colors hover:bg-ink hover:text-white md:inline-flex"
+          className="hidden rounded-full border border-brand px-4 py-2 text-sm text-brand transition-colors hover:bg-brand hover:text-white md:inline-flex"
         >
           Contact
         </Link>
         <Link
           href="/contact"
-          className="hidden items-center gap-2 rounded-full bg-ink px-4 py-2 text-white transition-colors hover:bg-[#333] md:inline-flex"
+          className="hidden items-center gap-2 rounded-full bg-brand px-4 py-2 text-white transition-colors hover:bg-brand-hover md:inline-flex"
         >
           <span className="text-sm font-normal">Get Started</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
@@ -59,7 +59,7 @@ export function Navbar() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex w-max items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm text-white"
+              className="mt-2 inline-flex w-max items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm text-white"
             >
               Get Started
             </Link>

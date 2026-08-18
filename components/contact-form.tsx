@@ -109,7 +109,7 @@ export function ContactForm() {
       </label>
       <button
         type="submit"
-        className="inline-flex w-max items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm text-white transition-colors hover:bg-[#333]"
+        className="inline-flex w-max items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm text-white transition-colors hover:bg-brand-hover"
       >
         Send message
       </button>

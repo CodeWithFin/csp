@@ -27,14 +27,14 @@ export default function HomePage() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm text-white transition-colors hover:bg-[#333]"
+              className="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm text-white transition-colors hover:bg-brand-hover"
             >
               Talk to our team
               <ArrowUpRight />
             </Link>
             <Link
               href="/services/shortcodes"
-              className="group inline-flex items-center gap-2 rounded-full border border-ink px-5 py-2.5 text-sm text-ink transition-colors hover:bg-ink hover:text-white"
+              className="group inline-flex items-center gap-2 rounded-full border border-brand px-5 py-2.5 text-sm text-brand transition-colors hover:bg-brand hover:text-white"
             >
               See shortcodes &amp; sender IDs
               <ArrowRight className="transition-transform group-hover:translate-x-1" />
@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="flex justify-start md:justify-end">
             <Link
               href="/services/shortcodes"
-              className="group inline-flex items-center gap-2 rounded-full border border-ink px-5 py-2 text-ink transition-colors hover:bg-ink hover:text-white"
+              className="group inline-flex items-center gap-2 rounded-full border border-brand px-5 py-2 text-brand transition-colors hover:bg-brand hover:text-white"
             >
               <span className="text-sm font-normal">Learn more</span>
               <ArrowRight className="text-lg transition-transform group-hover:translate-x-1" />

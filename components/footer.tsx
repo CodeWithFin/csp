@@ -13,7 +13,7 @@ export function Footer() {
             </h2>
             <Link
               href="/contact"
-              className="group inline-flex w-max items-center gap-2 rounded-full border border-white px-6 py-2.5 text-white transition-colors hover:bg-white hover:text-ink"
+              className="group inline-flex w-max items-center gap-2 rounded-full bg-brand px-6 py-2.5 text-white transition-colors hover:bg-brand-hover"
             >
               <span className="text-sm font-normal">Talk to our team</span>
               <ArrowUpRight className="text-lg transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

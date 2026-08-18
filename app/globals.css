@@ -15,6 +15,8 @@
   --color-dim: #4d4d4d;
   --color-soft: #e7e3e0;
   --color-live: #12866f;
+  --color-brand: #b4004e;
+  --color-brand-hover: #930040;
 }
 
 html {

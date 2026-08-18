@@ -55,7 +55,7 @@ export default function BulkSmsPage() {
             </div>
           ))}
         </div>
-        <Link href="/contact" className="group mt-12 inline-flex items-center gap-2 rounded-full border border-ink px-5 py-2 text-ink hover:bg-ink hover:text-white">
+        <Link href="/contact" className="group mt-12 inline-flex items-center gap-2 rounded-full border border-brand px-5 py-2 text-brand hover:bg-brand hover:text-white">
           Request a quote <ArrowRight className="transition-transform group-hover:translate-x-1" />
         </Link>
       </section>

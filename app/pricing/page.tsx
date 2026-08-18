@@ -63,7 +63,7 @@ export default function PricingPage() {
               <Link
                 key={s.href}
                 href={s.href}
-                className="group inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm text-ink hover:border-ink"
+                className="group inline-flex items-center gap-2 rounded-full border border-brand px-4 py-2 text-sm text-brand hover:bg-brand hover:text-white"
               >
                 {s.title} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>

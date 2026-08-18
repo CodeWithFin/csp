@@ -149,7 +149,7 @@ export default function ShortcodesPage() {
         <FaqList items={shortcodeFaqs} />
         <Link
           href="/contact"
-          className="group mt-16 inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm text-white hover:bg-[#333]"
+          className="group mt-16 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm text-white hover:bg-brand-hover"
         >
           Talk to our team
           <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
