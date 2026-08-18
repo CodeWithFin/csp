@@ -5,43 +5,16 @@ import { ContactMarquee } from "@/components/contact-marquee";
 import { FaqList } from "@/components/faq-list";
 import { ProductMarquee } from "@/components/product-marquee";
 import { SectionLabel } from "@/components/section-label";
-import { HeroThumb } from "@/components/hero-thumb";
+import { HomeHero } from "@/components/home-hero";
 import { UseCaseImage } from "@/components/use-case-image";
 import { ArrowRight, ArrowUpRight } from "@/components/icons";
-import { generalFaqs, services, site, useCases } from "@/lib/site";
+import { generalFaqs, services, useCases } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <>
-      <section className="px-6 pb-20 pt-16 md:px-12 md:pt-24 lg:px-20">
-        <div className="mx-auto mb-16 flex max-w-[82rem] flex-col">
-          <div className="flex flex-col items-start gap-4 overflow-hidden md:flex-row md:items-center md:gap-6">
-            <HeroThumb />
-            <h1 className="font-display text-[3.25rem] font-semibold leading-[1.1] tracking-tighter text-ink md:text-[6rem]">
-              One connection.
-            </h1>
-          </div>
-          <h1 className="font-display mt-2 text-[3.25rem] font-semibold leading-[1.1] tracking-tighter text-ink md:mt-0 md:text-[6rem]">
-            Every Kenyan network.
-          </h1>
-          <p className="mt-8 max-w-2xl text-lg font-normal leading-relaxed text-body md:text-xl">{site.description}</p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm text-white transition-colors hover:bg-brand-hover"
-            >
-              Talk to our team
-              <ArrowUpRight />
-            </Link>
-            <Link
-              href="/services/shortcodes"
-              className="group inline-flex items-center gap-2 rounded-full border border-brand px-5 py-2.5 text-sm text-brand transition-colors hover:bg-brand hover:text-white"
-            >
-              See shortcodes &amp; sender IDs
-              <ArrowRight className="transition-transform group-hover:translate-x-1" />
-            </Link>
-          </div>
-        </div>
+      <HomeHero />
+      <section className="px-6 py-16 md:px-12 lg:px-20">
         <ProductMarquee />
       </section>
 

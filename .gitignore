@@ -28,7 +28,12 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files
+.env
 .env*.local
+
+# inquiry store
+/data/*.json
+/data/*.tmp
 
 # typescript
 next-env.d.ts

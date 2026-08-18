@@ -10,7 +10,6 @@ export default function PrivacyPage() {
   return (
     <>
       <PageHero
-        eyebrow="Legal"
         title="Privacy Policy"
         body={`${site.name} processes business contact details and traffic metadata needed to deliver messaging services. This page is a working notice, not a substitute for a lawyer-reviewed policy.`}
       />

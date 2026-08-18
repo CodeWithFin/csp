@@ -14,7 +14,6 @@ export default function FaqPage() {
   return (
     <>
       <PageHero
-        eyebrow="FAQ"
         title="Questions we get before a code goes live"
         body="We're here to answer your questions and provide clarity on delivery, onboarding, and how shortcodes sit next to the rest of the stack."
       />

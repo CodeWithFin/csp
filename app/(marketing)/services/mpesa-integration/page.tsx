@@ -6,37 +6,36 @@ import { SectionLabel } from "@/components/section-label";
 import { ArrowRight } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "WhatsApp",
+  title: "M-Pesa integration",
   description:
-    "Turn one-way alerts into two-way WhatsApp conversations, with templates, media and support handoff.",
+    "STK Push, B2C payouts and automatic reconciliation wired directly into your messaging and USSD flows.",
 };
 
 const points = [
   {
-    title: "Templates",
-    body: "Approved message templates for alerts, OTPs and reminders, sent from the same account as your SMS.",
+    title: "STK Push",
+    body: "Send a payment prompt from an SMS keyword, a USSD menu or your own app. The customer enters a PIN; you get the result.",
   },
   {
-    title: "Media messages",
-    body: "Images, documents and richer layout when a 160-character SMS is not enough.",
+    title: "B2C payouts",
+    body: "Disburse winnings, refunds and field payments with the same audit trail as your inbound traffic.",
   },
   {
-    title: "Two-way conversations",
-    body: "Customers can reply. Route those threads to a queue, a webhook, or the person already covering SMS support.",
+    title: "Automatic reconciliation",
+    body: "Match references to sessions and messages so finance is not reconstructing the day from three CSVs.",
   },
   {
-    title: "Support handoff",
-    body: "Start on WhatsApp, fall back to SMS or a shortcode, and keep one conversation history.",
+    title: "Tied into SMS & USSD",
+    body: "The pay step lives inside the journey you already run, not a separate M-Pesa vendor with a different SLA.",
   },
 ];
 
-export default function WhatsAppPage() {
+export default function MpesaPage() {
   return (
     <>
       <PageHero
-        eyebrow="Services"
-        title="WhatsApp for alerts that need a reply"
-        body="Turn one-way notifications into two-way conversations. Templates and media for the outbound; a human or a webhook for whatever comes back."
+        title="M-Pesa inside the same journey"
+        body="STK Push, B2C and reconciliation wired directly into your messaging and USSD flows. One account, one webhook, one team in Nairobi."
       />
       <section className="mx-auto max-w-[82rem] px-6 pb-24 md:px-12 lg:px-20">
         <SectionLabel label="Capabilities" widthClass="w-36" />

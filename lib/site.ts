@@ -1,6 +1,9 @@
 import type { StaticImageData } from "next/image";
+import bulkSmsImage from "@/assets/images/bulk-sms.jpg";
 import campaignImage from "@/assets/images/campain.jpg";
 import leadCaptureImage from "@/assets/images/lead-capture.jpg";
+import oneConnectionImage from "@/assets/images/one-connection.jpg";
+import surveyImage from "@/assets/images/voting.jpg";
 import votingImage from "@/assets/images/voting-1.jpg";
 
 export const site = {
@@ -142,16 +145,19 @@ export const useCases: {
     title: "Subscriptions",
     body: "Paid opt-in content like tips, alerts and updates, with auto-renewal.",
     tags: ["Opt-in", "Billing"],
+    image: bulkSmsImage,
   },
   {
     title: "Support lines",
     body: "A short number customers can text for help, routed to your desk.",
     tags: ["Two-way", "Handoff"],
+    image: oneConnectionImage,
   },
   {
     title: "Surveys & NPS",
     body: "Two-way surveys sent from a sender ID people already recognise.",
     tags: ["NPS", "Sender ID"],
+    image: surveyImage,
   },
 ];
 
